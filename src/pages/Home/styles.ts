@@ -37,7 +37,7 @@ const ICON_COLORS = {
 interface IconSpanProps {
   color: keyof typeof ICON_COLORS;
 }
-
+// TODO: Fazer isso pelo before e pelo after da Li
 export const IconSpanContainer = styled.span<IconSpanProps>`
   background: ${(props) => props.theme[ICON_COLORS[props.color]]};
   padding: 0.5rem;
