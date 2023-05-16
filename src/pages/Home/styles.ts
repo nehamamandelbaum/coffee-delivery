@@ -62,3 +62,35 @@ export const ListContainer = styled.ul`
   margin-top: 4.125rem;
   gap: 4.375rem 9.75rem;
 `;
+
+export const CoffeeListWrapper = styled.ul`
+  display: flex;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 10%;
+  gap: 40px;
+`;
+
+export const ListTitleWrapper = styled.div`
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-between;
+`;
+
+export const FiltersContainer = styled.div`
+  display: flex;
+  column-gap: 8px;
+  align-items: center;
+`;
+
+export const TagContainer = styled.span`
+  background: ${(props) => props.theme["gray-100"]};
+  color: ${(props) => props.theme["yellow-700"]};
+  border: 1px solid ${(props) => props.theme["yellow-700"]};
+  padding: 0.125rem 0.5rem;
+  border-radius: 6.25rem;
+  font-size: 0.625rem;
+  font-weight: 700;
+  cursor: pointer;
+`;

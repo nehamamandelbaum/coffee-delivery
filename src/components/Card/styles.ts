@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const CardContainer = styled.div`
+export const CardContainer = styled.li`
   background: ${(props) => props.theme["gray-200"]};
   width: 16rem;
   border-radius: 6px 36px;
@@ -56,4 +56,26 @@ export const QuantityContainer = styled.div`
 
 export const PriceWrapper = styled.div`
   display: flex;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+export const CartButtonContainer = styled.button`
+  svg {
+    color: ${(props) => props.theme["gray-300"]};
+  }
+
+  background: ${(props) => props.theme["purple-700"]};
+  border: none;
+  padding: 0.4375rem;
+  border-radius: 6px;
+  margin-left: -1.625rem;
+`;
+
+export const TagWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 5px;
 `;

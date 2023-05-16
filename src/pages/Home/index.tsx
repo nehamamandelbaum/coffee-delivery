@@ -5,11 +5,22 @@ import {
   IconSpanContainer,
   ContentWrapper,
   ListContainer,
+  CoffeeListWrapper,
+  ListTitleWrapper,
+  FiltersContainer,
+  TagContainer,
 } from "./styles";
 import {ShoppingCart, Timer, Package, Coffee} from "@phosphor-icons/react";
 import {Card} from "../../components/Card";
 //TODO: Deixar a página responsiva!
 export function Home() {
+  const filters = [
+    "tradicional",
+    "especial",
+    "com leite",
+    "alcóolico",
+    "gelado",
+  ];
   return (
     <>
       <SectionContainer>
@@ -49,8 +60,15 @@ export function Home() {
         <img src={coffeeImage} alt="Imagem de copo de café" />
       </SectionContainer>
       <main>
-        <h2>Nossos Cafés</h2>
-        <div>
+        <ListTitleWrapper>
+          <h2>Nossos Cafés</h2>
+          <FiltersContainer>
+            {filters.map((filter) => (
+              <TagContainer>{filter}</TagContainer>
+            ))}
+          </FiltersContainer>
+        </ListTitleWrapper>
+        <CoffeeListWrapper>
           <Card
             imgSrc={traditionalCoffeeImg}
             tags={["tradicional"]}
@@ -58,8 +76,97 @@ export function Home() {
             description="O tradicional café feito com água quente e grãos moídos"
             price={9.9}
           />
-        </div>
+          <Card
+            imgSrc={traditionalCoffeeImg}
+            tags={["tradicional"]}
+            name={"Expresso Tradicional"}
+            description="O tradicional café feito com água quente e grãos moídos"
+            price={9.9}
+          />
+          <Card
+            imgSrc={traditionalCoffeeImg}
+            tags={["tradicional"]}
+            name={"Expresso Tradicional"}
+            description="O tradicional café feito com água quente e grãos moídos"
+            price={9.9}
+          />
+          <Card
+            imgSrc={traditionalCoffeeImg}
+            tags={["tradicional"]}
+            name={"Expresso Tradicional"}
+            description="O tradicional café feito com água quente e grãos moídos"
+            price={9.9}
+          />
+          <Card
+            imgSrc={traditionalCoffeeImg}
+            tags={["tradicional"]}
+            name={"Expresso Tradicional"}
+            description="O tradicional café feito com água quente e grãos moídos"
+            price={9.9}
+          />
+          <Card
+            imgSrc={traditionalCoffeeImg}
+            tags={["tradicional"]}
+            name={"Expresso Tradicional"}
+            description="O tradicional café feito com água quente e grãos moídos"
+            price={9.9}
+          />
+          <Card
+            imgSrc={traditionalCoffeeImg}
+            tags={["tradicional"]}
+            name={"Expresso Tradicional"}
+            description="O tradicional café feito com água quente e grãos moídos"
+            price={9.9}
+          />
+          <Card
+            imgSrc={traditionalCoffeeImg}
+            tags={["tradicional"]}
+            name={"Expresso Tradicional"}
+            description="O tradicional café feito com água quente e grãos moídos"
+            price={9.9}
+          />
+          <Card
+            imgSrc={traditionalCoffeeImg}
+            tags={["tradicional"]}
+            name={"Expresso Tradicional"}
+            description="O tradicional café feito com água quente e grãos moídos"
+            price={9.9}
+          />
+          <Card
+            imgSrc={traditionalCoffeeImg}
+            tags={["tradicional"]}
+            name={"Expresso Tradicional"}
+            description="O tradicional café feito com água quente e grãos moídos"
+            price={9.9}
+          />
+          <Card
+            imgSrc={traditionalCoffeeImg}
+            tags={["tradicional"]}
+            name={"Expresso Tradicional"}
+            description="O tradicional café feito com água quente e grãos moídos"
+            price={9.9}
+          />
+          <Card
+            imgSrc={traditionalCoffeeImg}
+            tags={["tradicional"]}
+            name={"Expresso Tradicional"}
+            description="O tradicional café feito com água quente e grãos moídos"
+            price={9.9}
+          />
+          <Card
+            imgSrc={traditionalCoffeeImg}
+            tags={["tradicional"]}
+            name={"Expresso Tradicional"}
+            description="O tradicional café feito com água quente e grãos moídos"
+            price={9.9}
+          />
+        </CoffeeListWrapper>
       </main>
     </>
   );
 }
+
+//Retomar daqui:
+// - Organizar o container dos cards.
+// -
+//
